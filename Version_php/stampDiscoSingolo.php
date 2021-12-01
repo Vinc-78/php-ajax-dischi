@@ -1,4 +1,5 @@
-<?php include "database.php"?>;
+<?php include "database.php";?>
+
 <?php
 
 
@@ -11,8 +12,9 @@ function stampaDisco($album) {
 ?>
 <div class="col" >
     <div class="card " >
+     
 
-    <?php echo '<img src="' . $album["poster"] . '"/>'; ?>
+    <?php echo '<img src=' . $album["poster"] . ' alt=""' . ' class="card-img-top"/>'; ?>
    
 
     <div class="card-body">
@@ -21,9 +23,9 @@ function stampaDisco($album) {
     </div>
     <div class="card-text text-center fs-5">
             <ul>
-            <li> <?php echo $album["author"] ?></li>
-            <li> <?php echo $album["genre"] ?></li>
-            <li> <?php echo $album["year"] ?></li>
+                <li> <?php echo $album["author"] ?></li>
+                <li> <?php echo $album["genre"] ?></li>
+                <li> <?php echo $album["year"] ?></li>
             </ul>
         </div>
     
