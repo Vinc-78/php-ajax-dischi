@@ -3,6 +3,8 @@ const discoContainer = document.getElementById("discoContainer");
 axios.get("http://localhost/php-ajax-dischi/Versione_js/api.php").then((resp) => {
   const dati = resp.data.cdList;
 
+  console.log(resp.data.cdList);
+
   dati.forEach((disco) => {
 
     const card = `<div class="col" >
